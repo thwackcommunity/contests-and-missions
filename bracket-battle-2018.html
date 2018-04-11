@@ -1,0 +1,530 @@
+<style>
+.round-1-pre{	
+	height:30px;
+	width:100%;
+	position:relative;
+}	
+.round-2-pre{	
+	height:60px;
+	width:100%;
+	position:relative;
+}	
+.round-3-pre{	
+	height:120px;
+	width:100%;
+	position:relative;
+}	
+.round-parent{	
+	display:inline-block;
+	vertical-align:top;
+	font-size:12px;
+	width:calc(9.8% - 20px);
+	line-height:12px;
+}		
+.round-bracket-parent{	
+	display:inline-block;
+	vertical-align:top;
+	width:15px;
+}	
+.round-1-bracket{	
+	height:30px;
+	width:100%;
+	background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/bracket-rd1.png');
+	background-size:100% 100%;
+}	
+.round-2-bracket{	
+	height:60px;
+	width:100%;
+	background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/bracket-rd2.png');
+	background-size:100% 100%;
+}	
+.entry-name-class{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	border-bottom:solid 1px #E2A022;
+}	
+.round-3-bracket{	
+	height:120px;
+	width:100%;
+	background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/bracket-rd3.png');
+	background-size:100% 100%;
+}	
+.round-4-pre{	
+	height:180px;
+	width:100%;
+	position:relative;
+}	
+.round-4-pre-bottom{	
+	height:150px;
+	width:100%;
+	position:relative;
+}
+.round-4-bracket{	
+	height:120px;
+	width:100%;
+	background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/bracket-top.png');
+	background-size:100%;
+}	
+.internal-bracket-bottom{	
+	height:150px;
+	background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/bracket-bottom.svg');
+	background-size:100% 100%;
+	position:relative;
+}	
+.internal-bracket-top{	
+	height:150px;
+	background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/bracket-top.svg');
+	background-size:100% 100%;
+	position:relative;
+	}
+.round-5-entry{
+	position:absolute;
+	bottom:0px;
+	text-align:center;
+	width:100%;
+	border-bottom:1px solid #E2A022;
+}	
+.center-block-top{	
+	background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/crest_transparentbg.png');
+	background-size:100% auto;
+	width:100%;
+	height:460px;
+	margin-top:100px;
+	background:visible;
+	background-position: center center;
+	background-repeat:no-repeat;
+}	
+.center-block-middle{	
+	background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/bracket-center.png');
+	background-size:100% 100%;
+	width:100px;
+	height:30px;
+	border-bottom:solid 1px #E2A022;
+}	
+.center-block-bottom{	
+	background:url('');
+	background-size:100% 100%;
+	width:200px;
+	height:60px;
+	border-bottom:solid 1px #E2A022;
+}	
+.round-1-pre{	
+	height:30px;
+	width:100%;
+	vertical-align:bottom;
+}
+#bracket-right{	
+	transform: scaleX(-1);
+}
+.jive-html-text-widget{
+		margin:-36px -41px -60px;
+	}
+	#voting-closed{
+		color:#505050
+	}
+	.play-in-parent{
+		height:60px;
+		width:calc(27% - 30px);
+		display:inline-block;
+	}
+	.play-in-bracket-1{
+		height:45px;
+		width:30px;
+		position:absolute;
+		right:0px;
+		top:0px;
+		display:inline-block;
+		background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/play-in-bracket-1.png');
+		background-size: 100% 100%;
+	}
+	.play-in-bracket-span{
+		height:30px;
+		width:calc(25% - 45px);
+		position:absolute;
+		right:30px;top:15px;
+		display:inline-block;
+		border-bottom:solid 1px #E2A022;
+	}
+	.play-in-bracket-2{
+		height:45px;
+		width:15px;
+		position:absolute;
+		right:calc(25% - 15px);
+		top:15px;
+		display:inline-block;
+	}
+	.play-in-entry-1{
+		height:30px;
+		width:120px;
+		position:absolute;
+		top:0px;
+		right:25%;
+		display:inline-block;
+	}
+	.play-in-entry-2{
+		height:30px;
+		width:120px;
+		position:absolute;
+		top:30px;right:25%;
+		display:inline-block;
+	}
+	.vote-button{
+		display:block;
+		padding:2px 10px 1px 5px;
+		background:white;
+		margin-bottom:2px;
+		text-decoration:none;
+		font-weight:bold;
+		font-size:10px;
+		position:absolute;
+		bottom:-10px;
+		border:none;
+	}
+	.vote-button:hover{
+		background:#E2A022;
+		border:none;
+	}
+	a.wiki-link{
+		color:white;
+		text-decoration:none;
+	}
+	a.wiki-link:hover{
+		color:#E2A022;
+		text-decoration:none;
+	}
+	#inactive{
+		color:#a1a1a1;
+		text-decoration:none;
+	}
+	#inactive:hover{
+		color:#E2A022;
+		text-decoration:none;
+	}
+	#active{
+		color:white;
+		text-decoration:none;
+	}
+	#active:hover{
+		color:#E2A022;
+		text-decoration:none;
+	}
+	a.more-buttons{
+		padding:11px 24px 11px 24px;
+		display:inline-block;
+		margin:10px;
+		background:#E2A022;
+		font-weight:bold;
+		color:white;
+		text-decoration:none;
+	}
+	a.more-buttons:hover{
+		padding:11px 24px 11px 24px;
+		display:inline-block;
+		margin:10px;
+		background:white;
+		font-weight:bold;
+		color:#E2A022;
+		text-decoration:none;
+	}
+	#pre-close{
+		padding:11px 24px 11px 24px;
+		display:inline-block;
+		margin:10px;
+		background:#505050;
+		font-weight:bold;
+		color:#444;
+		text-decoration:none;
+	}
+	.j-guest-tip { display: none; }
+	</style>
+
+<center>
+	<div style="background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/scales+background.png');color:white;padding-bottom:20px;background-size:auto 100%;background-position:center;">
+		<div style="display:block;vertical-align:middle;">
+			<div class="round-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Hypothetical[2].png" style="width:100%;"></div>
+			<div class="round-bracket-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Vector+Smart+Object+copy+2.png"></div>
+			<div class="round-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Unbelievable[1].png" style="width:100%;"></div>
+			<div class="round-bracket-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Vector+Smart+Object+copy+2.png"></div>
+			<div class="round-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Fantastical[2].png" style="width:100%;"></div>
+			<div class="round-bracket-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Vector+Smart+Object+copy+2.png"></div>
+			<div class="round-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Mythical[2].png" style="width:100%;"></div>
+			<div class="round-bracket-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Vector+Smart+Object+copy+2.png"></div>
+			<div class="round-parent" style="vertical-align:middle;width:calc(19.6% - 40px)"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Legendary[2].png" style="width:100%;"></div>
+			<div class="round-bracket-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Vector+Smart+Object+copy+5.png"></div>
+			<div class="round-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Mythical[2].png" style="width:100%;"></div>
+			<div class="round-bracket-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Vector+Smart+Object+copy+5.png"></div>
+			<div class="round-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Fantastical[2].png" style="width:100%;"></div>
+			<div class="round-bracket-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Vector+Smart+Object+copy+5.png"></div>
+			<div class="round-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Unbelievable[1].png" style="width:100%;"></div>
+			<div class="round-bracket-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Vector+Smart+Object+copy+5.png"></div>
+			<div class="round-parent" style="vertical-align:middle;"><img src="https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/Hypothetical[2].png" style="width:100%;"></div>
+		</div>
+			
+<!--Round 1-->
+<div class="round-parent" style="padding-top:15px;">
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Phantom_kangaroo" target="_blank" class="wiki-link" id="inactive">Phantom Kangaroo</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Thunderbird_(mythology)" target="_blank" class="wiki-link" id="inactive">Thunderbird</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Yeti" target="_blank" class="wiki-link" id="inactive">Yeti</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Bigfoot" target="_blank" class="wiki-link" id="inactive">Bigfoot</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/White_stag#Myth_and_legend" target="_blank" class="wiki-link" id="inactive">White Stag</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Chupacabra" target="_blank" class="wiki-link" id="inactive">Chupacabra</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Loch_Ness_Monster" target="_blank" class="wiki-link" id="inactive">Loch Ness Monster</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Drop_bear" target="_blank" class="wiki-link" id="inactive">Drop Bear</a></div></div>
+	<div class="fill-div" style="height:60px;"></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Jackalope" target="_blank" class="wiki-link" id="inactive">Jackalope</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Griffin" target="_blank" class="wiki-link" id="inactive">Griffin</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Hippogriff" target="_blank" class="wiki-link" id="inactive">Hippogriff</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Pegasus" target="_blank" class="wiki-link" id="inactive">Pegasus</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Manticore" target="_blank" class="wiki-link" id="inactive">Manticore</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Minotaur" target="_blank" class="wiki-link" id="inactive">Minotaur</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Mermaid" target="_blank" class="wiki-link" id="inactive">Mermaid</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Centaur" target="_blank" class="wiki-link" id="inactive">Centaur</a></div></div>
+</div>
+
+<!--Round 1 Brackets-->
+<div class="round-bracket-parent">
+	<div style="padding-top:45px;"></div>
+	<div class="round-1-bracket"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket"></div>
+	<div style="padding-top:30px;"></div>
+	
+	<div class="fill-div" style="height:60px;"></div>
+	<div class="round-1-bracket"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket"></div>
+</div>
+
+<!--Round 2-->
+<div class="round-parent">
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3472" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3473" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3474" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3475" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+	
+	<div class="fill-div" style="height:60px;"></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3476" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3477" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3478" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3479" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+</div>
+
+<!--Round 2 Brackets-->
+<div class="round-bracket-parent">
+	<div style="padding-top:60px;"></div>
+	<div class="round-2-bracket"></div>
+	<div style="padding-top:60px;"></div>
+	<div class="round-2-bracket"></div>
+	<div class="fill-div" style="height:60px;"></div>
+	<div style="padding-top:60px;"></div>
+	<div class="round-2-bracket"></div>
+	<div style="padding-top:60px;"></div>
+	<div class="round-2-bracket"></div>
+	
+</div>
+
+<!--Round 3-->
+<div class="round-parent">
+<div class="round-3-pre" style="height:90px"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-3-pre" style="background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/cryptids.png');background-size:100%;background-repeat:no-repeat;background-position:center"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+	<div class="fill-div" style="height:60px;"></div>
+<div class="round-3-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-3-pre" style="background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/half+and+halfs.png');background-size:100%;background-repeat:no-repeat;background-position:center"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+</div>
+
+
+
+
+
+	<!--Round 3 Brackets-->
+<div class="round-bracket-parent">
+	<div style="padding-top:90px;"></div>
+	<div class="round-3-bracket"></div>
+	<div class="fill-div" style="height:60px;"></div>
+	<div style="padding-top:120px;"></div>
+	<div class="round-3-bracket"></div>
+	
+</div>
+<!--Round 4 Left-->
+<div class="round-parent" style="position:absolute;">
+<div class="round-4-pre" style="height:150px;"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+	<div class="internal-bracket-top">
+		<div class="round-5-entry"><!--Input Winner Here--></div>
+	</div>
+	<div class="internal-bracket-bottom">
+<div class="round-4-pre-bottom"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;left:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div></div>
+</div>
+	
+	
+<!--center-->
+<div style="display:inline-block;width:calc(30% - 20px);overflow:visible;">
+	
+
+<div class="center-block-top" style="position:relative;left:15%;z-index:2"><div style="background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/winner.png');background-size:65%;background-position:center;background-repeat:no-repeat;position:relative;top:360px;width:50%;height:50px;"></div></div>
+	</div>
+
+<!--Round 4 Right-->
+<!--Round 4 Left-->
+<div class="round-parent" style="position:relative;">
+<div class="round-4-pre" style="height:150px;">
+	<div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+	<div class="internal-bracket-top" id="bracket-right">
+		<div class="round-5-entry" id="bracket-right"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div>
+	</div>
+	<div class="internal-bracket-bottom" id="bracket-right">
+<div class="round-4-pre-bottom" id="bracket-right"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div></div>
+</div>
+	
+	
+
+
+<!--Round 3 Brackets-->
+<div class="round-bracket-parent" id="bracket-right" style="position:relative;">
+	<div style="padding-top:90px;"></div>
+	<div class="round-3-bracket"></div>
+	<div class="fill-div" style="height:60px;"></div>
+	<div style="padding-top:120px;"></div>
+	<div class="round-3-bracket"></div>
+	
+</div>
+
+
+
+
+<!--Round 3-->
+<div class="round-parent" style="position:relative;">
+<div class="round-3-pre" style="height:90px">
+	<div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-3-pre" style="background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/the+gruesomes.png');background-size:130%;background-repeat:no-repeat;background-position:center;overflow:visible;"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+	<div class="fill-div" style="height:60px;"></div>
+<div class="round-3-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+<div class="round-3-pre" style="background:url('https://s3-us-west-2.amazonaws.com/monthly-missions/2018/bracket-battle/fairy+tales.png');background-size:100%;background-repeat:no-repeat;background-position:center"><div class="entry-name-class"><!-- remove comment when voting opens <a href="" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--><!-- remove comment when a winner has been found <a href="" target="_blank" class="wiki-link" id="active">WINNER NAME</a>--></div></div>
+</div>
+
+
+
+<!--Round 2 Brackets-->
+<div class="round-bracket-parent" style="position:relative;">
+	<div style="padding-top:60px;"></div>
+	<div class="round-2-bracket" id="bracket-right"></div>
+	<div style="padding-top:60px;"></div>
+	<div class="round-2-bracket" id="bracket-right"></div>
+	<div class="fill-div" style="height:60px;"></div>
+	<div style="padding-top:60px;"></div>
+	<div class="round-2-bracket" id="bracket-right"></div>
+	<div style="padding-top:60px;"></div>
+	<div class="round-2-bracket" id="bracket-right"></div>
+	
+</div>
+
+<!--Round 2-->
+<div class="round-parent" style="position:relative;">
+	
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3480" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3481" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3482" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3483" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--></div></div>
+	<div class="fill-div" style="height:60px;"></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3484" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3485" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3486" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--></div></div>
+<div class="round-2-pre"><div class="entry-name-class"><!-- remove comment when voting opens <a href="https://thwack.solarwinds.com/polls/3487" class="vote-button" style="color:black;right:0px;font-weight:bold;">VOTE</a>--></div></div>
+</div>
+
+
+
+<!--Round 1 Brackets-->
+<div class="round-bracket-parent" style="position:relative;">
+	<div style="padding-top:45px;"></div>
+	<div class="round-1-bracket" id="bracket-right"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket" id="bracket-right"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket" id="bracket-right"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket" id="bracket-right"></div>
+	<div class="fill-div" style="height:60px;"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket" id="bracket-right"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket" id="bracket-right"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket" id="bracket-right"></div>
+	<div style="padding-top:30px;"></div>
+	<div class="round-1-bracket" id="bracket-right"></div>
+</div>
+
+
+<!--Round 1-->
+<div class="round-parent" style="position:relative;padding-top:15px;">
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Frankenstein%27s_monster" target="_blank" class="wiki-link" id="inactive">Frankenstein's Monster</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Medusa" target="_blank" class="wiki-link" id="inactive">Medusa</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Cyclops" target="_blank" class="wiki-link" id="inactive">Cyclops</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Werewolf" target="_blank" class="wiki-link" id="inactive">Werewolf</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Zombie" target="_blank" class="wiki-link" id="inactive">Zombie</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Vampire" target="_blank" class="wiki-link" id="inactive">Vampire</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Kraken" target="_blank" class="wiki-link" id="inactive">Kraken</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="" target="_blank" class="wiki-link" id="inactive">Play-In</a></div></div>
+	<div class="fill-div" style="position:absolute;width:400px;right:25%;">
+	<div class="play-in-parent">
+	<div class="play-in-bracket-1"></div>
+	<div class="play-in-bracket-span"><a href="https://thwack.solarwinds.com/polls/3471" class="vote-button" style="bottom:-8px;left:2px;color:black;font-weight:bold;">VOTE</a></div>
+	<div class="play-in-bracket-2">
+		<div style="padding-top:15px;"></div>
+		<div class="round-1-bracket"></div>
+	</div>
+	<div class="play-in-entry-1" id="play-in-id"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Cerberus" target="_blank" class="wiki-link" id="active">Cerberus</a></div></div>
+	<div class="play-in-entry-2" id="play-in-id"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Anansi" target="_blank" class="wiki-link" id="active">Anansi</a></div></div>
+</div>
+	</div>
+<div class="round-1-pre" style="margin-top:60px;"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/The_Gingerbread_Man" target="_blank" class="wiki-link" id="inactive">Gingerbread Man</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Leprechaun" target="_blank" class="wiki-link" id="inactive">Leprechaun</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Dragon" target="_blank" class="wiki-link" id="inactive">Dragon</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Unicorn" target="_blank" class="wiki-link" id="inactive">Unicorn</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Troll" target="_blank" class="wiki-link" id="inactive">Troll</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Banshee" target="_blank" class="wiki-link" id="inactive">Banshee</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Phoenix_(mythology)" target="_blank" class="wiki-link" id="inactive">Phoenix</a></div></div>
+<div class="round-1-pre"><div class="entry-name-class"><a href="https://en.wikipedia.org/wiki/Basilisk" target="_blank" class="wiki-link" id="inactive">Basilisk</a></div></div>
+</div>
+		<br><br>
+		<div>
+			<a href="" class="more-buttons">LEARN MORE</a><a href="https://thwack.solarwinds.com/community/solarwinds-community/contests-missions/bracket-battle-2018/personal-bracket" class="more-buttons">MY BRACKET</a><p style="font-size:12px;color:white;">Each round opens at 10AM on its designated day, and stays open through 11:59PM on its closing day.<br><br><br><br></p>
+			<table style="width:100%;color:white;">
+			<tbody>
+				<tr><td style="text-align:center;color:white;font-size:14px;width:14%;vertical-align:top;"><strong>Play-In</strong><p style="padding:5px;color:white;">March 19 - March 20.</p></td>
+					<td style="text-align:center;color:white;font-size:14px;width:14%;vertical-align:top;"><strong>Round 1</strong><p style="padding:5px;color:white;">March 21 - March 25.</p><a href="" class="more-buttons" id="pre-close">RECAP</a></td>
+					<td style="text-align:center;color:white;font-size:14px;width:14%;vertical-align:top;"><strong>Round 2</strong><p style="padding:5px;color:white;">March 26 - March 28.</p><a href="" class="more-buttons" id="pre-close">RECAP</a></td>
+					<td style="text-align:center;color:white;font-size:14px;width:14%;vertical-align:top;"><strong>Round 3</strong><p style="padding:5px;color:white;">March 29 - April 1.</p><a href="" class="more-buttons" id="pre-close">RECAP</a></td>
+					<td style="text-align:center;color:white;font-size:14px;width:14%;vertical-align:top;"><strong>Round 4</strong><p style="padding:5px;color:white;">April 2 - April 4.</p><a href="" class="more-buttons" id="pre-close">RECAP</a></td>
+					<td style="text-align:center;color:white;font-size:14px;width:14%;vertical-align:top;"><strong>Championship</strong><p style="padding:5px;color:white;">April 5 - April 8.</p><a href="" class="more-buttons" id="pre-close">RECAP</a></td>
+					<td style="text-align:center;color:white;font-size:14px;width:14%;vertical-align:top;"><strong>Crown</strong><p style="padding:5px;color:white;">Winner announced April 11th.</p></td></tr></tbody></table><br><br>
+		
+		<div style="color:white;font-size:10px;width:600px;">TRADEMARK DISCLAIMER:<br>
+This is for entertainment purposes only. SOLARWINDS, SOLARWINDS & Design, and THWACK are the exclusive property of SolarWinds and its affiliates, are registered with the U.S. Patent and Trademark Office, and may be registered or pending registration in other countries. All other SolarWinds trademarks may be common law marks, registered or pending registration in the United States or in other countries. Any other trademarks or registered trademarks contained and/or mentioned herein are used only for identification purposes and are trademarks or registered trademarks of their respective companies. Specifically, Frankenstein is the trademark of Universal City Studios LLC.</div>
+	</div>
+</center>
+	
+	<script type="text/javascript">
+
+$j(document).ready(function() {
+
+  if (_jive_current_user.anonymous) {
+
+    $j(".jive-widget-container").click(function() {$j("#navLogin").click()});
+
+    $j(".jive-widget-container a").attr({target:null, href: "#"});
+
+  }
+
+});
+
+</script>
